@@ -1,0 +1,67 @@
+authors = ["d1y <chenhonzhou@gmail.com>"]
+description = "Tabby is an open-source, self-hosted AI coding assistant. With Tabby, every team can set up its own LLM-powered code completion server with ease."
+id = "tabby-agent"
+name = "Tabby"
+repository = "https://github.com/d1y/tabby-zed"
+schema_version = 1
+version = "0.0.1"
+
+[language_servers.tabby]
+name = "Tabby"
+
+# TODO: add full language support?
+# I just added some of the languages ​​I know how to use
+languages = [
+  "TypeScript",
+  "JavaScript",
+  "Vue.js",
+  "Go",
+  "Go Mod",
+  "Go Work",
+  "Shell Script",
+  "HTML",
+  "Scheme",
+  "Lua",
+  "Dart",
+  "Zig",
+  "C",
+  "C++",
+  "CSS",
+  "JSON",
+  "Markdown",
+  "Ruby",
+  "Rust",
+  "YAML",
+  "TOML",
+  "Plain Text",
+
+  "Git Commit",
+  "Git Ignore"
+]
+
+# At least I don't understand yet, what are `language_ids`?
+[language_ids]
+Dart = "dart"
+Go = "go"
+"Go Mod" = "gomod"
+"Go Work" = "gowork"
+HTML = "html"
+JavaScript = "javascript"
+Lua = "lua"
+Scheme = "scm"
+"Shell Script" = "shell"
+TypeScript = "typescript"
+"Vue.js" = "vuejs"
+Zig = "zig"
+C = "c"
+"C++" = "cpp"
+CSS = "css"
+JSON = "json"
+Markdown = "markdown"
+Python = "python"
+Ruby = "ruby"
+Rust = "rust"
+YAML = "yaml"
+TOML = "toml"
+"Git Commit" = "git_commit"
+"Git Ignore" = "git_ignore"
