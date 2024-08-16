@@ -24,7 +24,7 @@ impl TabbyExtension {
             id,
             &zed::LanguageServerInstallationStatus::CheckingForUpdate,
         );
-        let version = zed::npm_package_latest_version(PACKAGE_NAME)?;
+        let version = String::from("1.6.0");
 
         if !server_exists
             || zed::npm_package_installed_version(PACKAGE_NAME)?.as_ref() != Some(&version)
